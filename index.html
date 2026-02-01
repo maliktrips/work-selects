@@ -3,124 +3,83 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Campaign Lead Work Selects</title>
+  <title>Work Selects</title>
 
   <style>
     :root{
       --bg:#000;
-      --text:#d6d6d6;
+      --text:#cfcfcf;
       --muted:#7aa2a6;
-      --link:#d6d6d6;
-      --linkHover:#ffffff;
+
+      /* KEY KNOBS */
+      --sidePad: 24px;     /* <- increase for more left/right padding */
+      --maxCol: 820px;     /* <- increase for a wider column on desktop */
+      --gap: 26px;         /* <- space between images */
     }
 
-    html,body{ margin:0; padding:0; background:var(--bg); color:var(--text); }
-
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);}
     body{
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      -webkit-font-smoothing:antialiased;
     }
 
-    /* centered column like your screenshot */
     .wrap{
-      max-width: 760px;          /* adjust if you want wider */
+      max-width: var(--maxCol);
       margin: 0 auto;
-      padding: 56px 18px 80px;   /* top / sides / bottom */
+      padding: 44px var(--sidePad) 80px;
     }
 
-    .topline{
-      text-align:center;
-      font-size: 14px;
-      letter-spacing: .06em;
+    .title{
       color: var(--muted);
-      margin-bottom: 22px;
-    }
-
-    .nav{
-      display:flex;
-      justify-content:center;
-      gap: 28px;
-      margin-bottom: 42px;
-    }
-
-    .nav a{
-      color: var(--link);
-      text-decoration: none;
-      letter-spacing: .08em;
-      font-weight: 600;
-      font-size: 14px;
-    }
-
-    .nav a:hover{ color: var(--linkHover); }
-
-    .section-title{
-      text-align:left;
-      color: var(--muted);
-      letter-spacing: .08em;
-      font-weight: 700;
-      font-size: 14px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-weight:700;
+      font-size:14px;
       margin: 0 0 6px;
-      text-transform: uppercase;
     }
 
     .hint{
       color: var(--muted);
-      font-size: 13px;
-      font-style: italic;
-      margin: 0 0 20px;
+      font-size:13px;
+      font-style:italic;
+      margin: 0 0 18px;
     }
 
-    /* image stack */
-    .block{
-      margin: 0 0 26px;
-    }
+    .block{ margin: 0 0 var(--gap); }
 
-    .block a{
-      display:block;
-    }
+    .block a{ display:block; }
 
     .block img{
-      width: 100%;
-      height: auto;
+      width:100%;
+      height:auto;
       display:block;
-      border: 0;
     }
 
-    /* small mobile tweaks */
-    @media (max-width: 420px){
-      .wrap{ padding-top: 36px; }
+    /* Mobile: give a bit more breathing room */
+    @media (max-width: 430px){
+      :root{ --sidePad: 28px; }  /* <- more padding on phone */
     }
   </style>
 </head>
 
 <body>
   <div class="wrap">
-    <div class="topline">Malik Trips ©2026 CA</div>
-
-    <div class="nav">
-      <a href="/services">SERVICES</a>
-      <a href="/rss">RSS</a>
-    </div>
-
-    <div class="section-title">Campaign Lead Work Selects</div>
+    <div class="title">Lead Work Selects</div>
     <div class="hint">*tap for full size</div>
 
-    <!-- IMAGE 1 -->
     <div class="block">
       <a href="https://maliktrips.github.io/work-selects/fullsize/jaden-vision-tour.png" target="_blank" rel="noopener">
         <img src="https://maliktrips.github.io/work-selects/display/jaden-vision-tour.png" alt="">
       </a>
     </div>
 
-    <!-- IMAGE 2 -->
     <div class="block">
-      <a href="https://maliktrips.github.io/work-selects/fullsize/jaden-vision-tour-merch.png" target="_blank" rel="noopener">
-        <img src="https://maliktrips.github.io/work-selects/display/jaden-vision-tour-merch.png" alt="">
+      <a href="https://maliktrips.github.io/work-selects/fullsize/wheatpaste-both.jpg" target="_blank" rel="noopener">
+        <img src="https://maliktrips.github.io/work-selects/display/wheatpaste-both.jpg" alt="">
       </a>
     </div>
 
-    <!-- Add more blocks exactly like this -->
+    <!-- add more .block sections -->
   </div>
 </body>
 </html>
