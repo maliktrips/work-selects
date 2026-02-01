@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Campaign Lead Work Selects</title>
+
+  <style>
+    :root{
+      --bg:#000;
+      --text:#d6d6d6;
+      --muted:#7aa2a6;
+      --link:#d6d6d6;
+      --linkHover:#ffffff;
+    }
+
+    html,body{ margin:0; padding:0; background:var(--bg); color:var(--text); }
+
+    body{
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* centered column like your screenshot */
+    .wrap{
+      max-width: 760px;          /* adjust if you want wider */
+      margin: 0 auto;
+      padding: 56px 18px 80px;   /* top / sides / bottom */
+    }
+
+    .topline{
+      text-align:center;
+      font-size: 14px;
+      letter-spacing: .06em;
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
+
+    .nav{
+      display:flex;
+      justify-content:center;
+      gap: 28px;
+      margin-bottom: 42px;
+    }
+
+    .nav a{
+      color: var(--link);
+      text-decoration: none;
+      letter-spacing: .08em;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .nav a:hover{ color: var(--linkHover); }
+
+    .section-title{
+      text-align:left;
+      color: var(--muted);
+      letter-spacing: .08em;
+      font-weight: 700;
+      font-size: 14px;
+      margin: 0 0 6px;
+      text-transform: uppercase;
+    }
+
+    .hint{
+      color: var(--muted);
+      font-size: 13px;
+      font-style: italic;
+      margin: 0 0 20px;
+    }
+
+    /* image stack */
+    .block{
+      margin: 0 0 26px;
+    }
+
+    .block a{
+      display:block;
+    }
+
+    .block img{
+      width: 100%;
+      height: auto;
+      display:block;
+      border: 0;
+    }
+
+    /* small mobile tweaks */
+    @media (max-width: 420px){
+      .wrap{ padding-top: 36px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topline">Malik Trips ©2026 CA</div>
+
+    <div class="nav">
+      <a href="/services">SERVICES</a>
+      <a href="/rss">RSS</a>
+    </div>
+
+    <div class="section-title">Campaign Lead Work Selects</div>
+    <div class="hint">*tap for full size</div>
+
+    <!-- IMAGE 1 -->
+    <div class="block">
+      <a href="https://maliktrips.github.io/work-selects/fullsize/jaden-vision-tour.png" target="_blank" rel="noopener">
+        <img src="https://maliktrips.github.io/work-selects/display/jaden-vision-tour.png" alt="">
+      </a>
+    </div>
+
+    <!-- IMAGE 2 -->
+    <div class="block">
+      <a href="https://maliktrips.github.io/work-selects/fullsize/jaden-vision-tour-merch.png" target="_blank" rel="noopener">
+        <img src="https://maliktrips.github.io/work-selects/display/jaden-vision-tour-merch.png" alt="">
+      </a>
+    </div>
+
+    <!-- Add more blocks exactly like this -->
+  </div>
+</body>
+</html>
