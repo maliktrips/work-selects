@@ -1,85 +1,89 @@
-<!-- /about/index.html -->
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About – Malik Trips</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Copy the same styles used on your main page -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About</title>
+
   <style>
     :root{
       --bg:#000;
       --text:#cfcfcf;
       --muted:#7FC8B9;
       --accent:#9ECACA;
+
       --sidePad: 32px;
       --maxCol: 820px;
       --gap: 26px;
     }
+
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);}
     body{
-      font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
     }
-    .wrap{max-width:var(--maxCol);margin:0 auto;padding:44px var(--sidePad) 80px;}
+
+    .wrap{
+      max-width: var(--maxCol);
+      margin: 0 auto;
+      padding: 44px var(--sidePad) 80px;
+    }
+
     .top-center{
-      color:var(--muted);
+      color: var(--muted);
       letter-spacing:.06em;
       font-size:8px;
       text-align:center;
-      margin:0 0 22px;
+      margin: 0 0 22px;
     }
+
     .nav{
       display:flex;
       justify-content:center;
-      gap:28px;
-      margin:0 0 80px;
+      gap: 28px;
+      margin: 0 0 80px;
     }
     .nav a{
-      color:var(--accent);
+      color: var(--accent);
       text-decoration:none;
       letter-spacing:.08em;
       font-weight:600;
       font-size:10px;
     }
-    .nav a:hover{color:#fff;}
-    .block{margin:0 0 var(--gap);}
+    .nav a:hover{ color:#fff; }
+
+    .block{ margin: 0 0 var(--gap); }
     .block img{
       width:100%;
       height:auto;
       display:block;
     }
-    /* responsive image scaling for tablets – see details below */
-    @media (min-width:481px) and (max-width:1024px){
-      .block img{
-        width:80%;          /* reduce image size on iPad-sized screens */
-        margin-left:auto;
-        margin-right:auto;
-      }
-    }
-    @media (max-width:430px){
-      :root{--sidePad:60px;}
+
+    @media (max-width: 430px){
+      :root{ --sidePad: 60px; }
     }
   </style>
 </head>
 
 <body>
   <div class="wrap">
-    <!-- Keep your site header and nav so users can go back -->
+
     <div class="top-center">Malik Trips ©2026 CA</div>
 
     <div class="nav">
-      <a href="https://drive.google.com/file/d/1_HWlP4qEpA87LhRK4G2_Mk8vtWFITWyx/view?usp=drivesdk" target="_blank" rel="noopener">CASE STUDIES</a>
+      <a href="https://drive.google.com/file/d/1_HWlP4qEpA87LhRK4G2_Mk8vtWFITWyx/view?usp=drivesdk" target="_blank" rel="noopener">CASE STUDIES</a>
       <a href="https://drive.google.com/file/d/13q-Q2g5tVw0f7CGqsdy3zIE4NMLp9eZf/view?usp=drivesdk" target="_blank" rel="noopener">RÉSUMÉ</a>
-      <a href="/">WORK SELECTS</a>
+      <a href="/">WORK SELECTS</a>
     </div>
 
-    <!-- Your image content -->
     <div class="block">
-      <!-- store the image in your repo under /work-selects/fullsize/ and use an absolute path -->
-      <img src="maliktrips.github.io/work-selects/fullsize/gang_page_1.png" alt="About page hero image">
+      <img src="https://maliktrips.github.io/work-selects/fullsize/gang_page_1.png" alt="">
     </div>
+
   </div>
 </body>
 </html>
